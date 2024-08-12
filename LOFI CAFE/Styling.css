@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 0%;
+}
+
+.header {
+  text-align: center;
+  font-size: 4.3rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: -2px;
+  letter-spacing: 15px;
+}
+
+.NavHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  overflow: hidden;
+  height: 100px;
+  list-style-type: none;
+  margin-top: 0px;
+  position: fixed; /* Make the navigation panel fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: rgb(71, 147, 175);
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.NavItem {
+  margin: 0 20px; /* Adjust as needed for spacing */
+}
+
+.NavItem a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.25rem;
+  display: flex;
+  height: 100%;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.ContactUs a {
+  margin-left: auto;
+  color: rgb(0, 0, 0);
+}
+
+.NavCenter {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Allow the center container to grow */
+}
+
+body {
+  background-color: rgb(245, 184, 197);
+}
+
+.Title a {
+  font-family: "Yatra One", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Ensure transition is applied */
+}
+
+.Title a:hover {
+  color: rgb(63, 94, 88);
+}
+
+.HomeTitle {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: rgb(63, 94, 88);
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-family: "Yatra One", sans-serif;
+  padding: 0% 15px;
+  text-align: center;
+}
+
+.HomeTitle h1 {
+  transition: color 1.3s ease-in-out; /* Apply transition to h1 */
+}
+
+.HomeTitle h1:hover {
+  color: rgb(71, 147, 175); /* Ensure hover color is different */
+}
+
+.est-text {
+  font-family: "Yatra One", sans-serif; /* Match the font family */
+  font-size: 1rem; /* Small font size */
+  color: rgb(63, 94, 88); /* Match the color */
+  margin-top: -2%; /* Space between title and text */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .HomeTitle {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+  .est-text {
+    font-size: 0.75rem; /* Adjust font size for smaller screens */
+  }
+}
