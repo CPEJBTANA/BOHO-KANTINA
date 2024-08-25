@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 0%;
+}
+
+.header {
+  text-align: center;
+  font-size: 4.3rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: -2px;
+  letter-spacing: 15px;
+}
+
+.NavHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  overflow: hidden;
+  height: 100px;
+  list-style-type: none;
+  margin-top: 0px;
+  position: relative; /* Make the navigation panel fixed */
+  top: 0; /* Position it at the top of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  margin: 0 auto;
+  background-color: rgb(63, 94, 88);
+  /*
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Add shadow for depth 
+      border-radius: 10px; /* Rounded corners */
+}
+
+.NavItem {
+  float: left;
+  margin: 0 10px; /* Adjust as needed for spacing */
+}
+
+.NavItem a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  display: flex;
+  height: 100%;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.ContactUs a {
+  margin-left: auto;
+  color: rgb(0, 0, 0);
+  margin-right: 200px;
+  background-color: rgb(255, 255, 255);
+  transition: ease-in-out 0.7s;
+}
+.ContactUs a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.NavCenter {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Allow the center container to grow */
+  margin: 0 20px; /* Add margin to left and right */
+}
+
+.NavCenter a {
+  margin: 0 10px; /* Adjust as needed for spacing */
+}
+body {
+  background-color: rgb(63, 94, 88);
+}
+
+.Title {
+  margin-left: 200px;
+}
+.Title a {
+  font-family: "Yatra One", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Ensure transition is applied */
+}
+
+.Title a:hover {
+  color: rgb(63, 94, 88);
+}
+
+.HomeTitle {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-family: "Yatra One", sans-serif;
+  padding: 0% 15px;
+  text-align: center;
+  margin-top: -110px;
+}
+
+.HomeTitle h1 {
+  transition: color 1.3s ease-in-out; /* Apply transition to h1 */
+}
+
+.HomeTitle h1:hover {
+  color: rgb(71, 147, 175); /* Ensure hover color is different */
+}
+
+.est-text {
+  font-family: "Yatra One", sans-serif; /* Match the font family */
+  font-size: 1rem; /* Small font size */
+  color: rgb(63, 94, 88); /* Match the color */
+  margin-top: -2%; /* Space between title and text */
+  text-align: center;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 2.5rem -0.75rem rgba(0, 0, 0, 0.1);
+  scrollbar-width: none;
+  height: 40vw; /* Responsive height based on viewport width */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge, and Opera */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .slider {
+    height: 60vw; /* Adjust height for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 70vw; /* Adjust height for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 80vw; /* Adjust height for extra small screens */
+  }
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: aliceblue;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .HomeTitle {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+  .est-text {
+    font-size: 0.75rem; /* Adjust font size for smaller screens */
+  }
+}
+
+.footer {
+  background-color: rgb(63, 94, 88);
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.strip {
+  display: flex;
+  height: 200px;
+  background-color: rgb(63, 94, 88);
+  margin-top: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.strip h1 {
+  font-size: 3rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: -2px;
+  letter-spacing: 15px;
+  color: white;
+  text-align: center;
+}
+
+/* Adjust font size for tablets and smaller screens */
+@media (max-width: 768px) {
+  .strip h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Adjust font size for mobile devices */
+@media (max-width: 480px) {
+  .strip h1 {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+  }
+}
+.ImgContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.ImgContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.ImgContainer h2 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color */
+
+  padding: 10px; /* Optional: padding for the text */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text inside the h2 */
+}
+
+.InfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.InfoContainer p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.InfoContainer h1 {
+  font-size: 3rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: -2px;
+  letter-spacing: 15px;
+  color: white;
+}
+
+/* Adjust styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .InfoContainer {
+    width: 80%; /* Adjust width for smaller screens */
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+
+  .InfoContainer h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    letter-spacing: 10px; /* Adjust letter spacing for smaller screens */
+  }
+
+  .InfoContainer p {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Adjust styles for mobile devices */
+@media (max-width: 480px) {
+  .InfoContainer {
+    width: 90%; /* Adjust width for mobile devices */
+    height: 30vh; /* Adjust height for mobile devices */
+  }
+
+  .InfoContainer h1 {
+    font-size: 2rem; /* Adjust font size for mobile devices */
+    letter-spacing: 5px; /* Adjust letter spacing for mobile devices */
+  }
+
+  .InfoContainer p {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+  }
+}

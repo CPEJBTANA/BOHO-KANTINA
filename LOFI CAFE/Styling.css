@@ -22,26 +22,26 @@
   align-items: center;
   padding: 0px;
   overflow: hidden;
-  height: 100px;
+  height: 80px;
   list-style-type: none;
   margin-top: 0px;
   position: fixed; /* Make the navigation panel fixed */
   top: 0; /* Position it at the top of the viewport */
   width: 100%; /* Ensure it spans the full width of the viewport */
   z-index: 1000; /* Ensure it stays above other content */
-  background-color: rgb(71, 147, 175);
   margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  border-radius: 10px; /* Rounded corners */
+  background-color: rgb(63, 94, 88);
+  box-shadow: 0 10px 20px rgba(196, 250, 0, 0.1);
 }
 
 .NavItem {
-  margin: 0 20px; /* Adjust as needed for spacing */
+  float: left;
+  margin: 0 10px; /* Adjust as needed for spacing */
 }
 
 .NavItem a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.25rem;
   display: flex;
   height: 100%;
@@ -52,21 +52,37 @@
 .ContactUs a {
   margin-left: auto;
   color: rgb(0, 0, 0);
+  margin-right: 200px;
+  background-color: rgb(255, 255, 255);
+  transition: ease-in-out 0.7s;
 }
-
+.ContactUs a:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 .NavCenter {
   display: flex;
   justify-content: center;
   flex-grow: 1; /* Allow the center container to grow */
+  margin: 0 20px; /* Add margin to left and right */
 }
 
+.NavCenter a {
+  margin: 0 10px; /* Adjust as needed for spacing */
+}
 body {
-  background-color: rgb(245, 184, 197);
+  background-image: url("Images/home.jpg");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
 }
 
+.Title {
+  margin-left: 200px;
+}
 .Title a {
-  font-family: "Yatra One", sans-serif;
-  color: black;
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   transition: color 0.3s ease; /* Ensure transition is applied */
 }
@@ -81,15 +97,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
-  color: rgb(63, 94, 88);
+  color: rgb(255, 255, 255);
   font-size: 3.5rem; /* Adjust size as needed */
-  font-family: "Yatra One", sans-serif;
+  font-family: "Montserrat Subrayada", sans-serif;
   padding: 0% 15px;
   text-align: center;
+  margin-top: -65px;
+  outline: green 4px solid;
+  font-weight: 700;
 }
 
 .HomeTitle h1 {
   transition: color 1.3s ease-in-out; /* Apply transition to h1 */
+  text-shadow: rgb(255, 255, 255) 0px 0 160px;
 }
 
 .HomeTitle h1:hover {
@@ -99,8 +119,8 @@ body {
 .est-text {
   font-family: "Yatra One", sans-serif; /* Match the font family */
   font-size: 1rem; /* Small font size */
-  color: rgb(63, 94, 88); /* Match the color */
-  margin-top: -2%; /* Space between title and text */
+  color: rgb(255, 255, 255); /* Match the color */
+
   text-align: center;
 }
 
@@ -112,4 +132,18 @@ body {
   .est-text {
     font-size: 0.75rem; /* Adjust font size for smaller screens */
   }
+}
+
+.footer {
+  background-color: rgb(63, 94, 88);
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
 }
