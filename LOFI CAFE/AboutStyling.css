@@ -25,12 +25,12 @@
   height: 100px;
   list-style-type: none;
   margin-top: 0px;
-  position: relative; /* Make the navigation panel fixed */
+  position: sticky; /* Make the navigation panel fixed */
   top: 0; /* Position it at the top of the viewport */
   width: 100%; /* Ensure it spans the full width of the viewport */
   z-index: 1000; /* Ensure it stays above other content */
   margin: 0 auto;
-  outline: 2px solid red;
+
   background-color: rgb(63, 94, 88);
   /*
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Add shadow for depth 
