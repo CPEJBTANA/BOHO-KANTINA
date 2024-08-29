@@ -1,3 +1,44 @@
+.HomeTitle {
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-family: "Yatra One", sans-serif;
+  padding: 0% 15px;
+  text-align: center;
+  margin-top: -110px;
+}
+
+.HomeTitle h1 {
+  transition: color 1.3s ease-in-out; /* Apply transition to h1 */
+}
+
+.HomeTitle h1:hover {
+  color: rgb(71, 147, 175); /* Ensure hover color is different */
+}
+
+.est-text {
+  font-family: "Yatra One", sans-serif; /* Match the font family */
+  font-size: 1rem; /* Small font size */
+  color: rgb(63, 94, 88); /* Match the color */
+  margin-top: -2%; /* Space between title and text */
+  text-align: center;
+}
+
+/* Responsive styles for 13-inch laptops */
+@media (max-width: 1440px) {
+  .HomeTitle {
+    font-size: 2.5rem; /* Reduce font size */
+    margin-top: -80px; /* Adjust margin */
+  }
+
+  .est-text {
+    font-size: 0.8rem; /* Reduce font size */
+    margin-top: -1%; /* Adjust margin */
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -276,7 +317,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 50vh;
-
   width: 65%;
   margin: auto;
   overflow: hidden;
@@ -300,6 +340,23 @@ body {
   color: white;
 }
 
+/* Responsive styles for 13-inch laptops */
+@media (max-width: 1440px) {
+  .InfoContainer {
+    width: 80%; /* Adjust width */
+  }
+
+  .InfoContainer p {
+    font-size: 1.2rem; /* Reduce font size */
+    margin-top: 8px; /* Adjust margin */
+  }
+
+  .InfoContainer h1 {
+    font-size: 2.5rem; /* Reduce font size */
+    letter-spacing: 10px; /* Adjust letter spacing */
+  }
+}
+
 /* Adjust styles for tablets and smaller screens */
 @media (max-width: 768px) {
   .InfoContainer {
@@ -313,19 +370,19 @@ body {
   }
 
   .InfoContainer p {
-    font-size: 1.25rem; /* Adjust font size for smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
 
 /* Adjust styles for mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 414px) {
   .InfoContainer {
     width: 90%; /* Adjust width for mobile devices */
-    height: 30vh; /* Adjust height for mobile devices */
+    height: 40vh; /* Adjust height for mobile devices */
   }
 
   .InfoContainer h1 {
-    font-size: 2rem; /* Adjust font size for mobile devices */
+    font-size: 1.5rem; /* Adjust font size for mobile devices */
     letter-spacing: 5px; /* Adjust letter spacing for mobile devices */
   }
 
