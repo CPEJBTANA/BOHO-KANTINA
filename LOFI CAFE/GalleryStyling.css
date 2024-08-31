@@ -375,6 +375,23 @@ body {
 }
 
 /* Adjust styles for mobile devices */
+@media (max-width: 480px) {
+  .InfoContainer {
+    width: 90%; /* Adjust width for mobile devices */
+    height: 40vh; /* Adjust height for mobile devices */
+  }
+
+  .InfoContainer h1 {
+    font-size: 1.2rem; /* Adjust font size for mobile devices */
+    letter-spacing: 5px; /* Adjust letter spacing for mobile devices */
+  }
+
+  .InfoContainer p {
+    font-size: 0.9rem; /* Adjust font size for mobile devices */
+  }
+}
+
+/* Adjust styles for mobile devices */
 @media (max-width: 414px) {
   .InfoContainer {
     width: 90%; /* Adjust width for mobile devices */
@@ -382,11 +399,10 @@ body {
   }
 
   .InfoContainer h1 {
-    font-size: 1.5rem; /* Adjust font size for mobile devices */
+    font-size: 1rem; /* Adjust font size for mobile devices */
     letter-spacing: 5px; /* Adjust letter spacing for mobile devices */
   }
 
   .InfoContainer p {
-    font-size: 1rem; /* Adjust font size for mobile devices */
+    font-size: 0.8rem; /* Adjust font size for mobile devices */
   }
-}
