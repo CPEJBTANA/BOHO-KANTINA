@@ -1,0 +1,45 @@
+[33mcommit 90fdf0a14f5587deb2af844e55b7df00939f0ff6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: CPEJBTANA <jb.tana.cpe@gmail.com>
+Date:   Thu Aug 29 15:13:03 2024 +0800
+
+    responsive media queries plus inayos ko yung
+    sa home button logo
+
+[33mcommit 21aecb85768985653a383d2b29681c3b28ae2fac[m
+Merge: 49ea2a1 924d588
+Author: CPEJBTANA <jb.tana.cpe@gmail.com>
+Date:   Thu Aug 29 14:51:48 2024 +0800
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 49ea2a10c574761f570ce01ccc3b99ec1b240158[m
+Author: CPEJBTANA <jb.tana.cpe@gmail.com>
+Date:   Thu Aug 29 14:48:48 2024 +0800
+
+    Finished the menu/ still need to add something
+    for the contact us button
+
+[33mcommit 924d588e47e24522f5612846724e56731081998d[m
+Author: John Benedict Q. Taña <jb.tana.cpe@gmail.com>
+Date:   Sun Aug 25 17:18:11 2024 +0800
+
+    Update README.md
+
+[33mcommit 91bd4551d81e989220f2378b5626690081861dd8[m
+Author: CPEJBTANA <jb.tana.cpe@gmail.com>
+Date:   Sun Aug 25 11:42:08 2024 +0800
+
+    Repurposed the lo-fi cafe site for Boho Kantina
+    added new images and updated the styling
+
+[33mcommit 1dcddce01cef73f0dfb7beb5c8505813730b06cf[m
+Author: John Benedict Q. Taña <jb.tana.cpe@gmail.com>
+Date:   Mon Aug 12 17:33:25 2024 +0800
+
+    Add files via upload
+
+[33mcommit b67cb6d62a9cf05cce1b205c614ee97b24c814c6[m
+Author: John Benedict Q. Taña <jb.tana.cpe@gmail.com>
+Date:   Mon Aug 12 17:32:44 2024 +0800
+
+    Initial commit
